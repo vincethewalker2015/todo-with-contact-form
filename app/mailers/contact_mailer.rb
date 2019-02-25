@@ -2,12 +2,12 @@ class ContactMailer < ActionMailer::Base
     
     default to: 'contact@vincethewalker.com'
     
-    def contact_mail(name, email, body)
+    def contact_email(name, email, body)
         @name = name
         @email = email
         @body = body
         
-        mail(from: email, subject: 'Business Den Contact Form Message')
+        mail(from: email, subject: 'ToDo Contact Form Message')
     end
     
 end
